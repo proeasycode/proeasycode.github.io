@@ -135,8 +135,9 @@
       main {
         max-width: 90vw;
       }
+      /* Toujours 3 colonnes sur tablette */
       .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
       #moodboardimage {
         width: 90%;
@@ -154,8 +155,9 @@
       main {
         padding-bottom: 80px;
       }
+      /* Forcer 3 colonnes même sur mobile */
       .gallery-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
       }
       #moodboardimage {
         width: 85%;
