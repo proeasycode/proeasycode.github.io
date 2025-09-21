@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio Pâtisserie</title>
+<style>
+  /* Styles optimisés pour affichage d'images */
+  body {
+    font-family: 'Georgia', serif;
+    margin: 0; padding: 0;
+    background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+    color: #4b2e00;
+    scroll-behavior: smooth;
+  }
+
+  header {
+    background: linear-gradient(90deg, #7b4a0e, #d9a92f);
+    padding: 25px 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2.8em;
+    letter-spacing: 3px;
+    color: #fff8e1;
+    text-shadow: 1px 1px 2px #6d3600;
+  }
+
+  nav {
+    margin-top: 15px;
+    text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff8e1;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #4b2e00;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px 50px;
+    background: rgba(255,255,255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 175, 0, 0.4);
+    text-align: center;
+  }
+  section {
+    margin-bottom: 60px;
+  }
+  section h2 {
+    border-bottom: 3px solid #d9a92f;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #7b4a0e;
+    text-align: center;
+  }
+
+  .gallery-block {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .gallery-block p {
+    color: #7b4a0e;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .gallery-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(217,169,47,0.6);
+    object-fit: cover;
+  }
+
+  footer {
+    background: linear-gradient(90deg, #7b4a0e, #d9a92f);
+    padding: 25px 20px;
+    text-align: center;
+    color: #fff8e1;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    main {
+      max-width: 90vw;
+    }
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2em;
+    }
+    nav a {
+      display: block;
+      margin: 12px 0;
+    }
+    main {
+      padding-bottom: 80px;
+    }
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+    .gallery-grid img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(217,169,47,0.6);
+    }
+    
+
+
+    #moodboardimage {
+     width: 10%;
+      height: auto;
+      max-height: 400px;
+     object-fit: cover;
+     border-radius: 10px;
+     box-shadow: 0 0 8px rgba(217,169,47,0.6);
+     display: block;
+    }
+
+
+
+
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Portfolio Pâtisserie</h1>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="accueil">
+    <h2>Bienvenue dans mon univers sucré</h2>
+    <p> Avant d’entamer toute ébauche, j’ai jugé nécessaire de faire le point sur les idées que je souhaitais intégrer dans ma pièce. Mes inspirations sont à la fois marines, architecturales et historiques, ce qui m’a permis d’enrichir ma réflexion et de diversifier mes sources d’idées.
+J’ai donc réalisé un mood board rassemblant ces éléments, ce qui m’a permis d’y voir plus clair.
+.</p>
+    <img id="moodboardimage" src="Mood Board.JPG" alt="Mood board" width="900" height="600"/>
+    <p></p>
+    <p>
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>Galerie</h2>
+    
+    <div class="gallery-block">
+      <p><br>
+      Après plusieurs croquis et esquisses, je n’étais pas pleinement convaincu par mon idée. Je me suis donc rapidement attelé au travail du chocolat, afin de laisser libre cours à ma créativité grâce à la sensibilité qu’exige cette matière. 
+Cependant, mon intention profonde est restée la même : créer une pièce imposante par son volume, mais légère, dynamique, et capable de donner l’impression de prendre vie. 
+ </p>
+      <div class="gallery-grid">
+        <img src="1.jpg" alt="Photoe 1" />
+        <img src="2.jpg" alt="Photo 2" />
+        <img src="3.jpg" alt="Photo 3" />
+      </div>
+    </div>
+
+    <div class="gallery-block">
+      <p><br>
+      Je me suis laissé porter par la dextérité et la sensibilité que requiert le chocolat, laissant ainsi libre cours à mon imagination en créant une vague.</p>
+      <div class="gallery-grid">
+        <img src="4.jpg"  />
+        <img src="5.jpg" />
+        <img src="6.jpg"  />
+        <img src="8.jpg"  />
+        <img src="9.jpg"  />
+        <img src="10.jpg"  />
+        <img src="11.jpg" />
+        <img src="12.jpg"  />
+        <img src="13.jpg"  />
+        <img src="14.jpg" />
+        <img src="15.jpg"  />
+        <img src="17.jpg"  />
+      </div>
+    </div>
+
+    <section id="sous-gallery">
+
+
+    <div class="gallery-block">
+          <h2><br>La Graine et la Mer</h2>
+      <p><br>
+      Puis la pièce maîtresse de cette sculpture : la statue intitulée « La Graine et la Mer », que j’ai réinterprétée avec mon feeling, ma sensibilité et toute l’émotion que j’ai pu y insuffler pour la créer. Inventer une femme à partir de rien pour parvenir à ce résultat a été un réel exercice de créativité.</p>
+      <div class="gallery-grid">
+        <img src="IMG_0718.jpeg"/>
+        <img src="IMG_0719.jpeg"/>
+        <img src="IMG_0720.jpeg"/>
+        <img src="IMG_0721.jpeg"/>
+        <img src="18.jpg"  />
+        <img src="19.jpg"  />
+        <img src="20.jpg"  />
+        <img src="21.jpg" />
+        <img src="22.jpg"  />
+        <img src="24.jpg"  />
+        <img src="26.jpg"  />
+        <img src="27.jpg"  />
+      </div>
+    </div>
+
+    <div class="gallery-block">
+      <p><br>
+      Je devais ensuite fusionner ces deux pièces pour n’en former qu’une seule. C’est à ce moment que m’est venue l’idée de représenter cette femme comme une sorte de déesse du fond marin marsaillais, émergeant de sa vague pour se montrer au monde, portant son fruit dans la main et l’exposant au grand jour.</p>
+      <div class="gallery-grid">
+        <img src="28.jpg"  />
+        <img src="29.jpg"  />
+        <img src="30.jpg"  />
+      </div>
+    </div>
+    <div class="gallery-block">
+      <p><br>
+        C’est ainsi qu’est née ma pièce : un subtil mélange de beauté, d’art et de vie, où chaque geste, chaque forme et chaque reflet de lumière traduit mon univers. Une création qui me représente, comme si mon identité et ma sensibilité prenaient forme. Aujourd’hui je suis fier de vous présenter cette œuvre et de l’exposer enfin au grand jour, devant les yeux des spectateurs.
+
+      </p>
+    </div>
+    </section>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>mail@gmail.com</strong></p>
+  </section>
+</main>
+
+<footer>
+  &copy; Steeve Pernod
+</footer>
+
+</body>
+</html>
