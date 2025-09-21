@@ -93,12 +93,14 @@
       justify-items: center;
     }
     .gallery-grid img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      max-width: 300px;       /* limite la largeur globale */
+      height: auto;           /* conserve le ratio original */
+      object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 0 8px rgba(217,169,47,0.6);
-      object-fit: cover;
     }
+
 
     /* Style par défaut pour le mood board */
     #moodboardimage {
@@ -273,3 +275,4 @@
 
   <footer>
     Steeve Pernod
+
